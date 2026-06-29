@@ -1,7 +1,7 @@
 {
   "name": "المكتبة الفلسطينية للكتب التفاعلية",
   "short_name": "المكتبة",
-  "description": "المكتبة الفلسطينية للكتب التفاعلية",
+"description": "المكتبة الفلسطينية للكتب التفاعلية",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
