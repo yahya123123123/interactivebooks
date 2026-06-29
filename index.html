@@ -1,46 +1,149 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>المكتبة الفلسطينية للكتب التفاعلية</title>
+
+<title>الحمام الزاجل</title>
 
 <style>
-body{
+
+*{
 margin:0;
-font-family:Tahoma,Arial,sans-serif;
-background:#f4f4f4;
-text-align:center;
+padding:0;
+box-sizing:border-box;
+font-family:Tahoma,sans-serif;
+}
+
+body{
+background:#0b1e38;
+color:white;
 }
 
 header{
-background:#006c35;
-color:white;
+background:#082040;
+padding:20px;
+text-align:center;
+font-size:30px;
+font-weight:bold;
+color:#FFD66B;
+box-shadow:0 3px 10px rgba(0,0,0,.4);
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+.cover{
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+.cover img{
+width:100%;
+display:block;
+}
+
+.info{
+text-align:center;
 padding:25px;
 }
 
-h1{
-margin:0;
-font-size:32px;
+.info h1{
+font-size:34px;
+color:#FFD66B;
+margin-bottom:15px;
 }
 
-p{
+.info p{
 font-size:20px;
+line-height:1.9;
+margin-bottom:25px;
 }
 
-main{
-padding:40px;
+.author{
+
+font-size:22px;
+
+color:#ddd;
+
+margin-bottom:30px;
+
 }
 
-.button{
+.btn{
+
 display:inline-block;
-padding:15px 35px;
-background:#c1272d;
+
+padding:16px 45px;
+
+background:#d4a017;
+
 color:white;
+
+font-size:22px;
+
 text-decoration:none;
-border-radius:10px;
-font-size:20px;
+
+border-radius:12px;
+
+transition:.3s;
+
 }
+
+.btn:hover{
+
+background:#b78600;
+
+transform:scale(1.05);
+
+}
+
+footer{
+
+margin-top:40px;
+
+text-align:center;
+
+padding:20px;
+
+font-size:18px;
+
+color:#ccc;
+
+}
+
+@media(max-width:700px){
+
+.info h1{
+
+font-size:28px;
+
+}
+
+.info p{
+
+font-size:18px;
+
+}
+
+.btn{
+
+width:100%;
+
+font-size:20px;
+
+}
+
+}
+
 </style>
 
 </head>
@@ -48,23 +151,54 @@ font-size:20px;
 <body>
 
 <header>
-<h1>🇵🇸 المكتبة الفلسطينية للكتب التفاعلية</h1>
-<p>أول منصة فلسطينية للكتب التعليمية والتفاعلية</p>
+
+📖 كتاب الحمام الزاجل
+
 </header>
 
-<main>
+<div class="container">
 
-<h2>مرحباً بك</h2>
+<div class="cover">
+
+<img src="../cover.jpg">
+
+</div>
+
+<div class="info">
+
+<h1>الدليل الشامل للتربية والتدريب والسباقات</h1>
 
 <p>
-سيتم هنا عرض جميع الكتب التفاعلية بإذن الله.
+
+النسخة التفاعلية الكاملة.
+
 </p>
 
- <a class="button" href="books.html">
+<div class="author">
+
+تأليف
+
+<br><br>
+
+يحيى علي حسن الناعم
+
+</div>
+
+<a class="btn" href="../page2.jpg">
+
 ابدأ القراءة
+
 </a>
 
-</main>
+</div>
+
+</div>
+
+<footer>
+
+الاتحاد الفلسطيني لرياضة الحمام الزاجل
+</footer>
 
 </body>
+
 </html>
