@@ -53,6 +53,42 @@
 الاتحاد الفلسطيني لرياضة الحمام الزاجل
 
 </footer>
+</footer>
+
+<script>
+document.querySelectorAll("img").forEach(img => {
+  img.style.cursor = "zoom-in";
+
+  img.onclick = function () {
+    const overlay = document.createElement("div");
+    overlay.style.position = "fixed";
+    overlay.style.top = "0";
+    overlay.style.left = "0";
+    overlay.style.width = "100%";
+    overlay.style.height = "100%";
+    overlay.style.background = "rgba(0,0,0,.9)";
+    overlay.style.display = "flex";
+    overlay.style.justifyContent = "center";
+    overlay.style.alignItems = "center";
+    overlay.style.zIndex = "9999";
+
+    const big = document.createElement("img");
+    big.src = this.src;
+    big.style.maxWidth = "95%";
+    big.style.maxHeight = "95%";
+    big.style.borderRadius = "12px";
+    big.style.boxShadow = "0 0 30px #000";
+
+    overlay.appendChild(big);
+
+    overlay.onclick = function () {
+      overlay.remove();
+    };
+
+    document.body.appendChild(overlay);
+  };
+});
+</script>
 
 </body>
 </html>
