@@ -1,89 +1,87 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>كتاب الحمام الزاجل</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-<link rel="manifest" href="../manifest.json">
-<link rel="apple-touch-icon" href="../icon-512.png">
-<meta name="theme-color" content="#0b6b3a">
+<title>المكتبة الفلسطينية للكتب التفاعلية</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#0b6b3d">
+
+<link rel="stylesheet" href="assets/css/main.css">
+
 </head>
 
 <body>
 
-<header class="header">
-<h1>📖 كتاب الحمام الزاجل</h1>
-<p>الدليل الشامل للتربية والتدريب والسباقات</p>
-</header>
+<header>
 
-<div class="page">
-
-<img src="../photo-10.png" class="cover">
-
-<h2>تأليف</h2>
-
-<h3>يحيى علي حسن الناعم</h3>
+<h1>🇵🇸 المكتبة الفلسطينية للكتب التفاعلية</h1>
 
 <p>
-أول كتاب فلسطيني تفاعلي متخصص في رياضة الحمام الزاجل، يحتوي على صور وشرح مفصل ورسوم توضيحية وصفحات سهلة القراءة على الهاتف.
+
+موسوعة الكتب الزراعية والحيوانية والتعليمية
+
 </p>
 
-<div class="buttons">
+</header>
 
-<a class="btn" href="page1.html">
-📖 ابدأ القراءة
-</a>
+<div class="search">
 
-<a class="btn" href="../books.html">
-📚 العودة للمكتبة
-</a>
+<input
+
+type="search"
+
+placeholder="ابحث عن كتاب..."
+
+>
 
 </div>
 
-</div>
+<section class="books">
+
+<a href="books/pigeon/index.html" class="book">
+
+<img src="assets/images/pigeon.jpg">
+
+<h2>كتاب الحمام الزاجل</h2>
+
+<p>الدليل الشامل للتربية والتدريب والسباقات</p>
+
+</a>
+
+<a href="#" class="book">
+
+<img src="assets/images/rabbit.jpg">
+
+<h2>كتاب الأرانب</h2>
+
+<p>قريباً</p>
+
+</a>
+
+<a href="#" class="book">
+
+<img src="assets/images/quail.jpg">
+
+<h2>كتاب السمان</h2>
+
+<p>قريباً</p>
+
+</a>
+
+</section>
 
 <footer>
-© الاتحاد الفلسطيني لرياضة الحمام الزاجل
+
+المكتبة الفلسطينية للكتب التفاعلية ©2026
+
 </footer>
 
-<script>
-document.querySelectorAll("img").forEach(img => {
-  img.style.cursor = "zoom-in";
-
-  img.onclick = function () {
-    const overlay = document.createElement("div");
-    overlay.style.position = "fixed";
-    overlay.style.top = "0";
-    overlay.style.left = "0";
-    overlay.style.width = "100%";
-    overlay.style.height = "100%";
-    overlay.style.background = "rgba(0,0,0,.9)";
-    overlay.style.display = "flex";
-    overlay.style.justifyContent = "center";
-    overlay.style.alignItems = "center";
-    overlay.style.zIndex = "9999";
-
-    const big = document.createElement("img");
-    big.src = this.src;
-    big.style.maxWidth = "95%";
-    big.style.maxHeight = "95%";
-    big.style.borderRadius = "12px";
-    big.style.boxShadow = "0 0 30px #000";
-
-    overlay.appendChild(big);
-
-    overlay.onclick = function () {
-      overlay.remove();
-    };
-
-    document.body.appendChild(overlay);
-  };
-});
-</script>
+<script src="assets/js/app.js"></script>
 
 </body>
 </html>
