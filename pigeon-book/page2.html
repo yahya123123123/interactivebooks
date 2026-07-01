@@ -48,11 +48,11 @@
 
 <div class="nav">
 
-<a class="btn" href="page1.html">
+<a class="btn prev-page" href="page1.html">
 ⬅ الصفحة السابقة
 </a>
 
-<a class="btn" href="page3.html">
+<a class="btn next-page" href="page3.html">
 ➡ الصفحة التالية
 </a>
 
@@ -65,7 +65,30 @@
 © الاتحاد الفلسطيني لرياضة الحمام الزاجل
 
 </footer>
+<script>
+let touchStartX = 0;
+let touchEndX = 0;
 
+document.addEventListener("touchstart", function(e){
+    touchStartX = e.changedTouches[0].screenX;
+});
+
+document.addEventListener("touchend", function(e){
+    touchEndX = e.changedTouches[0].screenX;
+
+    const diff = touchEndX - touchStartX;
+
+    if (diff > 80) {
+        const prev = document.querySelector(".prev-page");
+        if (prev) window.location.href = prev.href;
+    }
+
+    if (diff < -80) {
+        const next = document.querySelector(".next-page");
+        if (next) window.location.href = next.href;
+    }
+});
+</script>
 </body>
 
 </html>
